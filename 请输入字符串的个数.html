@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script>
+        window.onload=function(){
+            var btn=document.getElementById("btn");
+            btn.onclick=function(){
+                var ts=document.getElementById("ts").value;
+                var dn=document.getElementsByClassName("dn");
+                for(var i=0;i<ts;i++){
+                    var input=document.createElement("input");
+                    input.setAttribute("class","text");
+                    input.type="text";
+                    input.name="字符";
+                    input.id="inp"; 
+                    dn[0].appendChild(input);
+
+                    //var input = document.createElement("input");
+                    //input.setAttribute("class", "Checkbox");
+                    //input.type = "Checkbox";
+                    //input.name = "字符2";
+                    //input.id = "inp2";
+                    //dn[0].appendChild(input);
+
+                    var input2 = document.createElement("input2");
+                    //input.setAttribute("class", "text");
+                    input2.setAttribute("class", "text");
+                    //input2.setAttribute("300px", "width");
+                    input2.type = "text";
+                    input2.name = "字符3";
+                    input2.id = "inp3";
+                    //input.width ="200";
+                    //input.height="800";
+                    //input.innerText = "万鹏";
+                    dn[0].appendChild(input2);
+
+                }
+                var button=document.createElement("input");
+                button.setAttribute("class","but");
+                button.type="button";
+                button.name="anniu";
+                button.value="确认";
+                button.id="but";
+                dn[0].appendChild(button);
+
+            var pics=document.getElementById("dnn").getElementsByTagName("input");
+            var len=pics.length;
+            var but=document.getElementById("but");
+            but.onclick=function(){
+                for(var j=0;j<len;j++){
+                    var inp=document.getElementById("inp").value;
+                    console.log(inp);
+                }
+                console.log(inp);
+            }
+                }
+                }
+    </script>
+
+</head>
+<body>
+    <div class="box">
+        <div class="dn" id="dnn">
+            <input type="text" id="ts" placeholder="请输入字符串的个数">
+            <!-- </div>
+            <div class="tip"> -->
+            <input type="button" id="btn" value="确定">
+        </div>
+
+
+    </div>
+</body>
+</html>
