@@ -28,6 +28,8 @@
         <asp:Label ID="Label2" runat="server" Text="主题"></asp:Label>
         <asp:TextBox ID="Text_Subject" runat="server"></asp:TextBox>
         <asp:Label ID="Label3" runat="server" Text="发起人"></asp:Label>
+
+        <br />
         <asp:TextBox ID="Text_UserName" runat="server"></asp:TextBox>
         <asp:Label ID="Label4" runat="server" Text="发起单位"></asp:Label>
         <asp:TextBox ID="Text_Sponsored_unit" runat="server"></asp:TextBox>
@@ -44,8 +46,18 @@
             <asp:ListItem>制造</asp:ListItem>
             <asp:ListItem>检测</asp:ListItem>
         </asp:ListBox>
+
+        <asp:CheckBoxList ID="CheckBoxList1" runat="server"></asp:CheckBoxList>
+
+
+        <input class="mini-combobox" style="width:150px;" textField="text" valueField="id" 
+    value="cn,tyt,676" showNullItem="true" allowInput="true"/> 
+
         <asp:Label ID="Label7" runat="server" Text="发起时间"></asp:Label>
         <asp:TextBox ID="Text_Starting_time" runat="server"></asp:TextBox>
+
+           <br />
+
         <asp:Label ID="Label8" runat="server" Text="生产班组"></asp:Label>
         <asp:TextBox ID="TextBox_Production_team" runat="server"></asp:TextBox>
         <br />
@@ -54,6 +66,7 @@
         <asp:Label ID="Label10" runat="server" Text="项目来源"></asp:Label>
         <asp:TextBox ID="Text_Project_source" runat="server"></asp:TextBox>
         <asp:Label ID="Label11" runat="server" Text="产品型号"></asp:Label>
+           <br />
         <asp:TextBox ID="Text_Product_model" runat="server"></asp:TextBox>
         <asp:Label ID="Label12" runat="server" Text="附件"></asp:Label>
         <asp:TextBox ID="Text_Enclosure" runat="server"></asp:TextBox>
@@ -67,6 +80,9 @@
         <asp:TextBox ID="Text_Dominant_unit_1" runat="server"></asp:TextBox>
         <asp:Label ID="Label16" runat="server" Text="主导人"></asp:Label>
         <asp:TextBox ID="Text_Leader_1" runat="server"></asp:TextBox>
+
+           <br />
+
         <asp:Label ID="Label17" runat="server" Text="截止时间"></asp:Label>
         <asp:TextBox ID="Text_Expiration_date_1" runat="server"></asp:TextBox>
         <br />
